@@ -1,0 +1,255 @@
+/*The Whole Website*/
+body{
+  max-width: 1060px;
+  margin: auto;
+background-color: rgba(0, 0, 0, 0.87);}
+/*all h3 */
+h3{
+  display: list-item;
+  font-size: 25px;
+  border-bottom: 2px solid rgba(199, 196, 196, 0.493);
+}
+
+h3::marker{
+  color: red;
+  font-size: 60px;
+}
+/*Header*/
+header div{
+  display: flex;
+ background-color: rgb(186, 169, 169);
+ padding-left: 10rem;
+ color: rgb(226, 34, 34);
+}
+
+header :last-child{
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Contact Box Right Top */
+.contact{
+ position:absolute;
+ display: flex;
+ width: 26rem;
+ height: 6rem;
+ top: 0.2rem;
+ background: linear-gradient(to right, 
+ red 28% , black 10%);
+ margin-left: 7.2rem;
+}
+
+.contact dt ,a{
+  margin: 0.3rem;
+  color:rgb(255, 255, 255);
+  z-index: 1;
+  position: absolute;
+  }
+
+.contact-email :first-child{
+position: absolute;
+  top: 1%;
+
+}
+.contact-skype :first-child{
+  position: absolute;
+  top: 18%;
+
+}
+.contact-phone :first-child{
+  position: absolute;
+  top: 36%;
+
+}
+.contact-github :first-child{
+  position: absolute;
+  top: 55%;
+
+}
+.contact-facebook :first-child{
+  position: absolute;
+  top: 75%;
+
+}
+
+.contact-value a{
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  }
+
+  dd{
+    color: rgb(255, 0, 0);
+    margin-left: 35%;}
+
+
+
+/*Body*/
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 7em;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+}
+/*********/
+.skills-primary{
+  flex-direction: column;
+  display: flex;
+  margin: 2% 0 3% 5%;
+  color: white;
+}
+
+.skill{
+  border: 2px solid rgb(255, 255, 255) ;
+
+}
+
+.skills-primary [data-skill="5"]{
+  border: 3px solid rgb(214, 200, 200);
+  background: linear-gradient(to Right, 
+  rgba(255,0,0,255) 60% , rgba(204,204,204,255) 50%);
+  font-size: 18px;
+  margin-bottom: 1%;
+}
+
+.skills-primary [data-skill="3"]{
+  border: 3px solid rgb(214, 200, 200);
+  background: linear-gradient(to Right, 
+  rgba(255,0,0,255) 40% , rgba(204,204,204,255) 25%);
+  font-size: 18px;
+  margin-bottom: 1%;
+}
+  
+.skills-primary [data-skill="1"]{
+  border: 3px solid rgb(214, 200, 200);
+  background: linear-gradient(to Right, 
+  rgba(255,0,0,255) 22% , rgba(204,204,204,255) 10%);
+  font-size: 18px;  margin-bottom: 1%;
+}
+
+  .skills-primary span{
+    margin-left: 1%;
+  }
+
+.skills-secondary{
+  flex-direction: column;
+  display: flex;
+  margin: 2% 0 3% 5%;
+  color: white;
+}
+
+.skills-secondary [data-skill="9"]{
+  border: 3px solid rgb(221, 215, 215);
+  background: linear-gradient(to Right, 
+  rgba(255,75,75,255) 90% ,rgba(219,219,219,255)25%);
+  font-size: 18px;
+  margin-bottom: 1%;
+
+}
+
+.skills-secondary [data-skill="5"]{
+  border: 3px solid rgba(255,255,255,255);
+  background: linear-gradient(to Right, 
+  rgba(255,75,75,255) 60% ,rgba(219,219,219,255) 25%);
+  font-size: 18px;
+  margin-bottom: 1%;
+
+}
+
+.skills-secondary [data-skill="7"]{
+  border: 3px solid rgba(255,255,255,255);
+  background: linear-gradient(to Right, 
+  rgba(255,75,75,255) 75% , rgba(219,219,219,255) 25%);
+  font-size: 18px;
+  margin-bottom: 1%;
+
+}
+.skills-secondary span{
+  margin-left: 1%;
+}
+
+div.content section{
+  width: 26.1rem;
+  
+}
+
+.experience-type, .experience-date-separator{
+  color: red;
+  font-size: 19px;
+}
+
+.experience-institution{
+  color: red;
+  font-style: italic;
+}
+
+.experience-details{
+  color: rgba(156, 141, 141, 0.884);
+}
+
+/*Text Added*/
+.experience-institution::before {content: "@";}
+.skills-primary::before{content: "Main"; color: black; font-weight: bolder}
+.skills-secondary::before{content: "Other"; color: black; font-weight: bolder}
+.experience-location::before{content: "In";}
+
+#contact h3{
+  display: none;
+}
+@media only screen 
+   and (min-width :320px) and (max-width :850px) {
+
+  body{
+    background-color: unset;
+  }
+  header div{
+    flex-direction: column;
+}
+header{
+  width: 100%;
+}
+div.content section{
+  width: 100%;
+}
+ #contact h3{
+  display: block; 
+  font-weight: bold; 
+  font-size: 1.3rem;
+  border-bottom: 1px solid silver;
+  padding-bottom:5px ;
+  display: list-item;
+}
+
+.contact{
+  position:absolute;
+  top: auto;
+  margin-left: auto;
+  padding-bottom: 3%;
+  background: linear-gradient(to right, 
+  red 28% , rgb(255, 255, 255) 10%);
+ }
+
+   }
+
+   @media only screen 
+   and (min-width :850px) and (max-width :1059px) {
+
+    header div{
+      display: flex;
+     background-color: rgb(186, 169, 169);
+     padding-left: 2rem;
+     color: rgb(226, 34, 34);
+    }
+    .contact{
+    position:absolute;
+    display: flex;
+    width: 26rem;
+    height: 6rem;
+    top: 0.2rem;
+    background: linear-gradient(to right, 
+    red 28% , black 10%);
+    margin-left: 20rem;
+   }
+  }
+   
