@@ -197,6 +197,8 @@ div.content section{
 #contact h3{
   display: none;
 }
+
+/******Media queries*********/
 @media only screen 
    and (min-width :320px) and (max-width :850px) {
 
