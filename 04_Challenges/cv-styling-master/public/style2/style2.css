@@ -27,7 +27,6 @@ figure img{
   top: 2.5rem;
   opacity: 95%;
 }
-
 body div{ 
   margin: auto;
   background-color: rgb(255, 255, 255);
@@ -217,7 +216,7 @@ background-image: url("../images/email.png");
 
 
 
-
+/***********Media queries**************/
 @media only screen 
    and (min-width :320px) and (max-width :850px) {
     body{
