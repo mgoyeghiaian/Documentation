@@ -73,7 +73,7 @@ figure {
 
 /**
  * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
+ * 2. Show the overflow in Edge and IE.-webkit-appearance
  */
 
 hr {
@@ -445,3 +445,4 @@ template {
 [hidden] {
   display: none;
 }
+
