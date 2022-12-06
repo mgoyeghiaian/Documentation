@@ -216,7 +216,7 @@ background-image: url("../images/email.png");
 
 
 
-/***********Media queries**************/
+/**********Media queries**************/
 @media only screen 
    and (min-width :320px) and (max-width :850px) {
     body{
@@ -310,4 +310,4 @@ margin-left: 0;
   .contacts  {
     display: flex;
 }
-   }
+  }
