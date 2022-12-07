@@ -1,2 +1,2 @@
-var name = "Hello World.";
-alert(name);
+var Name = "Hello World.";
+alert(Name);
