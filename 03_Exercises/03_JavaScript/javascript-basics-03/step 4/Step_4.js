@@ -9,5 +9,9 @@ var change_border = function () {
     password.style.border = "3px solid red";
     confirm.style.border = "3px solid red";
   }
+  else {
+    password.style.border = "";
+    confirm.style.border = "";
+  }
 }
 button.addEventListener("click", change_border);
