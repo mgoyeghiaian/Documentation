@@ -1,9 +1,10 @@
-function buttton(use) {
-  var texte = document.getElementById("texte");
-  if (use === "show") {
-    texte.style.display = "inline";
-  } else if (use === "hide") {
-    texte.style.display = "none";
+function buttton(x) {
+  console.log(x)
+  var text = document.getElementById("texte");
+  if (x == "show") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
   }
 
 }
