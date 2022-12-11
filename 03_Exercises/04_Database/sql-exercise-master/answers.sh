@@ -22,43 +22,4 @@ UPDATE students SET Points = Points +200 WHERE name="Basma"
 UPDATE students SET Points = Points -8 WHERE name="Alex"
 **************************************************************************
 
-******************Creating Table********************************************
-# 1. Create a table graduates
-CREATE TABLE "graduates" (
-	"ID"	INTEGER NOT NULL,
-	"Name"	TEXT NOT NULL UNIQUE,
-	"Age"	INTEGER,
-	"Gender"	TEXT,
-	"Points"	INTEGER,
-	"Graduation"	TEXT,
-	PRIMARY KEY("ID" AUTOINCREMENT)
-);
-
-#2.Copy Layal's data from students to graduates
-
-INSERT INTO graduates(ID,name,Age,Gender,Points)
-SELECT * FROM students WHERE ID = 4
-
-#3.Add the graduation date previously mentioned to Layal's record in graduates
-UPDATE graduates
-SET Graduation = '08/09/2018'
-WHERE ID = 4;
-
-
-#4. Remove Layal's record from students
-DELETE FROM students WHERE ID = 4;
-*******************************************************************
-
-******************Joins********************************************
-
-#1. Produce a table that contains, for each employee, his/her name, company name, and company date.
-SELECT employees.Name, employees.Company, companies.Date FROM employees,companies WHERE employees.Company = companies.Name;
-
-#2.Find the name of employees that work in companies made before 2000.
-SELECT employees.Name FROM companies, employees WHERE employees.Company = companies.Name AND companies.date < 2000;
-
-#3.Find the name of company that has a graphic designer.
-SELECT companies.Name FROM employees, companies WHERE employees.Company = companies.Name AND employees.Role='Graphic Designer';
-
-***********************************************************************
 
