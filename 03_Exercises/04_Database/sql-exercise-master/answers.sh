@@ -1,14 +1,17 @@
 
-******************Joins********************************************
+**************Count & Filter*******************************************
 
-#1. Produce a table that contains, for each employee, his/her name, company name, and company date.
-SELECT employees.Name, employees.Company, companies.Date FROM employees,companies WHERE employees.Company = companies.Name;
+#1.Find the person with the highest number of points in students.
+SELECT Name FROM students WHERE Points = (SELECT max(Points) FROM students);
 
-#2.Find the name of employees that work in companies made before 2000.
-SELECT employees.Name FROM companies, employees WHERE employees.Company = companies.Name AND companies.date < 2000;
+#2.Find the average of points in students
+SELECT AVG(Points) FROM students;
 
-#3.Find the name of company that has a graphic designer.
-SELECT companies.Name FROM employees, companies WHERE employees.Company = companies.Name AND employees.Role='Graphic Designer';
+#3.Find the number of students that have 500 points
+SELECT count(*) FROM students WHERE Points = 500;
 
-***********************************************************************
+#4. Find the names of students that contains 's'
+select Name from students where name like '%s%';
 
+#5.Find all students based on the decreasing order of their points
+SELECT Name FROM students ORDER BY Points DESC;
